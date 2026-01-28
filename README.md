@@ -17,7 +17,8 @@ The Gevako RS6 is a 6-channel Smart Switch suitable for Home Assistant by using 
 | GPIO03   | Output 4                |
 | GPIO04   | Output 5                |
 | GPIO05   | Output 6                |
-| GPIO08   | Green LED / BOOT        |
+| GPIO08   | Green LED               |
+| GPIO09   | BOOT                    |
 | GPIO14   | Power source detection  |
 
 ## Electrical schematic
