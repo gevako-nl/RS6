@@ -45,3 +45,9 @@ The Gevako RS6 is a 6-channel Smart Switch suitable for Home Assistant by using 
 
 ## Electial wiring example
 <img width="600" height="739" alt="RS6 example_2 0 1" src="https://github.com/user-attachments/assets/3e578544-4c16-45c5-b363-5d55fe7742ed" />
+
+## Use the Gavako ESPHome Installer
+### [Gevako ESPHome Installer](https://gevako.nl/esphome/)
+
+### Or use the official online ESPHome Installer
+##### [ESPHome Installer](https://web.esphome.io/)
