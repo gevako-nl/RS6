@@ -22,17 +22,17 @@
 # ---------------------------------------------------------------------------------------
 # --- SUBSTITUTIONS ---
 # Edit these values to customize your device.
-# GPIO pins are defined in packages/rs6-hardware.yaml — do not edit those.
+# GPIO pins are defined in esphome-packages/rs6-hardware.yaml — do not edit those.
 
 substitutions:
   device_name: "gevako-rs6"
   friendly_name: "Gevako RS6"
   project_name: "Gevako.Gevako RS6 Firmware"
-  firmware_version: "1.5.1"
+  firmware_version: "1.5.2"
   ota_password: "gevako-ota"
   name_add_mac_suffix: "true"
   logger_level: "INFO"
-  dashboard_import: "github://gevako-nl/firmware/rs6/gevako-rs6.yaml@main"
+  dashboard_import: "github://gevako-nl/rs6/gevako-rs6.yaml@main"
 
   # --- OUTPUT NAMES ---
   name_output_1: "Output 1"
@@ -60,23 +60,23 @@ esphome:
 # --- PACKAGES ---
 packages:
   base:
-    url: https://github.com/gevako-nl/firmware
+    url: https://github.com/gevako-nl/esphome-packages
     ref: main
-    files: [packages/rs-base.yaml]
+    files: [rs-base.yaml]
     refresh: 1d
 
   hardware:
-    url: https://github.com/gevako-nl/firmware
+    url: https://github.com/gevako-nl/esphome-packages
     ref: main
-    files: [packages/rs6-hardware.yaml]
+    files: [rs6-hardware.yaml]
     refresh: 1d
 
   connectivity:
-    url: https://github.com/gevako-nl/firmware
+    url: https://github.com/gevako-nl/esphome-packages
     ref: main
     # Choose only one connectivity option, remove # and place #
-    #files: [packages/rs-wifi.yaml]      # ← WiFi
-    files: [packages/rs-thread.yaml]   # ← Thread, place thread_provisioning.h in esphome/packages
+    files: [rs-wifi.yaml]      # ← WiFi
+    #files: [rs-thread.yaml]   # ← Thread, place thread_provisioning.h in esphome/packages
     refresh: 1d
 
 # --- OPTIONAL OPTIONS FOR WIFI ---
